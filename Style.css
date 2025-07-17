@@ -1,0 +1,185 @@
+
+
+* {
+  box-sizing: border-box;
+}
+
+.preuve {
+  height: 100px;
+width: 48%;
+border: solid 5px yellow;
+border-radius: 10px;
+}
+.barre {background-color: black;}
+.monlogo {
+  height: 300px;
+  width: 100%;
+  display: block;
+  border-radius: 50px;
+  border: solid 2px gray;
+}
+.debutfin {
+  color: blue;
+  text-align: center;
+  text-decoration: underline;
+}
+ #remonter {
+  display: none; /* Caché par défaut */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  font-size: 18px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px 15px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  transition: 0.3s ease;
+}
+.like {
+  text-align: center;
+height: 50px;
+width: 100px;
+font-size: 20px;
+}
+strong {
+  color: red;
+background: black;
+padding: 2px;
+margin: 5px;
+border-radius: 10px;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.footer {
+  font-size: 14px;
+  margin-top: 40px;
+  padding: 20px;
+  background: #eaeaea;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 100;
+}
+
+.number-float {
+  position: fixed;
+  bottom: 60px;
+  left: 20px;
+  z-index: 100;
+}
+
+.assistant {
+  position: fixed;
+  bottom: 100px;
+  left: 20px;
+  z-index: 100;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f8f9fa;
+  color: #222;
+  padding: 0px;
+}
+
+#elmenu {
+  display: none;
+  background: ;
+}
+.menu {background: yellow;
+  padding: 15px;
+  font-size: 20px;
+}
+#marques {
+  display: none;
+  background: green;
+}
+.marques {padding: 5px;background: lightblue;;
+}
+
+.texte-defilant {
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.texte-defilant p {
+  display: inline-block;
+  padding-left: 100%;
+  animation: defilement 10s linear infinite;
+  font-weight: bold;
+  color: red;
+  font-size: 1.2rem;
+}
+
+@keyframes defilement {
+  0%   { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}
+
+.imca {
+  height: 100px;
+width: 200px;
+  border: solid 5px red;
+  border-radius: 5px;
+}
+#apropos {
+  padding: 30px;
+  background-color: black;
+  color: white;
+}
+
+.avis {
+display: block;
+outline-width: 1px;
+  font-style: Arial;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: Arial Sans-Serif;
+}
+
+
+.etoiles {
+  display: flex;
+  direction: row;
+}
+
+.etoile {
+  font-size: 24px;
+  color: #ccc; /* couleur des étoiles non sélectionnées */
+  cursor: pointer;
+}
+
+.etoile::before {
+  content: "\2605"; /* caractère Unicode pour une étoile */
+}
+
+.etoile.remplie {
+  color: #ffd700; /* couleur des étoiles sélectionnées */
+}
+
+.envoyez {
+  font-size: 20px;}
+.comment {margin: 20px;}
+.mlogo {border-radius: 50%;
+float: right;
+  width: 80px;
+  height: 80px;
+  position: relative;
+}
